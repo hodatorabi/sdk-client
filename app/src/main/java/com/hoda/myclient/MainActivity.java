@@ -26,9 +26,9 @@ public class MainActivity extends Activity {
         if (calService == null) {
             System.out.println("it's null");
             Intent it = new Intent(ICalService.class.getName());
-            it.setAction("multiplyservice");
+            it.setAction("com.hoda.cpserver.multiplyservice");
 
-            it.setPackage("com.hoda.cpserver");
+            it.setPackage("com.hoda.myclient");
 //            Intent it = new Intent(this, ICalService.class);
             getApplicationContext().bindService(it, new ServiceConnection() {
                 @Override
